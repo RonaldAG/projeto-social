@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>FutOng</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script/aluguel.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Reserve nosso campo</h1>
+        <p>Verifique a disponibilidade</p>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doacao.html">Doação</a></li>
+        <li><a href="aluguel.html">Aluguel</a></li>
+        <li><a href="#">Revelações</a></li>
+        <li><a href="#">Inscreva-se</a></li>
+    </ul>
+    </nav>
+
+    <main>
+        <div>
+            <h2>Para realizar o aluguel do campo, por favor preencha o formulário abaixo</h2>
+        </div>
+         <div>
+            <form class="formulariopersonalizado" id="frmAluguel" >
+                <!-- Campo de texto para o nome -->
+                <label for="nome">Nome</label>
+                <input type="text" id="txtNome" name="nome" required>
+    
+                <!-- Campo de texto para o email -->
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" required>
+    
+                <!-- Campo de texto para o email -->
+                <label for="frequenciaAluguel">Tipo de aluguel</label>
+                <select id="frequenciaAluguel" name="frequenciaAluguel">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="avulso">Avulso</option>
+                    <option value="semanalmente">Semanalmente</option>
+                    <option value="quinzenal">Quinzenal</option>
+                    <option value="mensal">Mensal</option>
+                </select>
+
+                <fieldset id="diaSemana" hidden>
+                    <legend>Dia da semana</legend>
+                  
+                    <div>
+                      <input type="checkbox" id="segunda" name="segunda" />
+                      <label for="segunda">Segunda-feira</label>
+                    </div>
+                  
+                    <div>
+                        <input type="checkbox" id="terca" name="terca" />
+                        <label for="terca">Terça-feira</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="quarta" name="quarta" />
+                        <label for="quarta">Quarta-feira</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="quinta" name="quinta" />
+                        <label for="quinta">Quinta-feira</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="sexta" name="sexta" />
+                        <label for="sexta">Sexta-feira</label>
+                      </div>
+                </fieldset>
+                <div id="cxDataAvulso" style="display: none;">
+                    <label for="dataAvulso">Data</label>
+                    <input type="date" name="dataAvulso" id="dataAvulso">    
+                </div>
+                <!-- Área de texto para a mensagem -->
+                <label for="horarioAluguel">Horario</label>
+                <select id="horarioAluguel" name="horarioAluguel">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="opcao1">17h às 19h</option>
+                    <option value="opcao2">19h às 21h</option>
+                    <option value="opcao3">21h às 23h</option>
+                    <option value="opcao3">6h às 8h</option>
+                </select>
+
+                <!-- Botão para enviar o formulário com efeito hover -->
+                <button type="submit" class="evento-mouse">Enviar Solicitação</button>
+            </form> 
+         </div>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados para o clube XX</p>
+    </footer>
+    <script src="efeito.js"></script>
+</body>
+</html>
