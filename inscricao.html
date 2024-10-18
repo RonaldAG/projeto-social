@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>FutOng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/inscricao.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Inscreva-se para a peneira</h1>
+        <p>Nossas seletivas acontecem a cada 3 meses. A próxima acontecerá 10/12/2024 no nosso clube</p>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doacao.html">Doação</a></li>
+        <li><a href="aluguel.html">Aluguel</a></li>
+        <li><a href="revelacoes.html">Revelações</a></li>
+        <li><a href="inscricao.html">Inscreva-se</a></li>
+    </ul>
+    </nav>
+
+    <main>
+        <div>
+            <h2>Preencha com suas informações e receba a notificação por e-mail</h2>
+        </div>
+         <div>
+            <form class="formulariopersonalizado" id="frmIncricao" >
+                <!-- Campo de texto para o nome -->
+                <label for="nome">Nome</label>
+                <input type="text" id="txtNome" name="nome" required>
+    
+                <!-- Campo de texto para o email -->
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" required>
+    
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" required>
+
+                <label for="dataNascimento">Data de nascimento</label>
+                <input type="date" name="dataNascimento" id="dataNascimento" required>
+                
+                <label for="documento">CPF</label>
+                <input type="number" name="documento" required>
+                
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" required>
+
+                <!-- Campo para a rua (preenchido automaticamente) -->
+                <label for="street">Rua:</label>
+                <input type="text" id="street" name="street" readonly>
+
+                <!-- Campo para o bairro (preenchido automaticamente) -->
+                <label for="neighborhood">Bairro:</label>
+                <input type="text" id="neighborhood" name="neighborhood" readonly>
+
+                <!-- Campo para a cidade (preenchido automaticamente) -->
+                <label for="city">Cidade:</label>
+                <input type="text" id="city" name="city" readonly>
+
+                <!-- Campo para o estado (preenchido automaticamente) -->
+                <label for="state">Estado:</label>
+                <input type="text" id="state" name="state" readonly>
+                
+
+                <!-- Botão para enviar o formulário com efeito hover -->
+                <button type="submit" class="evento-mouse">Enviar Solicitação</button>
+            </form> 
+         </div>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados para o clube XX</p>
+    </footer>
+    <script src="efeito.js"></script>
+</body>
+</html>

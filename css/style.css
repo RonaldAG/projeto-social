@@ -13,7 +13,7 @@ body {
     color: #333;
     background-color: #f4f4f4;
     line-height: 1.6;
-    background-image: url('img/5687688.jpg');
+    background-image: url('img/background_ball.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,44 +138,23 @@ footer {
     max-width: 100%;
     margin: auto;
     overflow: hidden;
+    text-align: center;
 }
 
 .carroussel-container {
-    display: flex;
+    display: block;
     transition: transform 0.5s ease-in-out;
 }
 
 .carroussel-imagem {
     min-width: 100%;
-    box-sizing: border-box;
 }
 
 .carroussel img {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     display: block;
-}
-
-.carroussel-anterior,
-.carroussel-proximo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 24px;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.carroussel-anterior {
-    left: 10px;
-}
-
-.carroussel-proximo {
-    right: 10px;
 }
 
 p.thick {
