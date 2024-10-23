@@ -28,17 +28,19 @@ window.onload = function() {
             return; // Interrompe a execução da função
         }
 
-        // Verifica se os campos de endereço estão preenchidos
+        // Verifica se os campos de email está preenchido
         const email = document.getElementById('email').value;
         if (email === '') {
             alert('Por favor, preencha um email válido.');
             return;
         }
 
+        
         const dataAvulso = document.getElementById('dataAvulso').value;
         const inputDate = new Date(dataAvulso);
         const currentDate = new Date();
         currentDate.setHours(0, 0, 0, 0);
+        // Verifica se caso selecionado a opcao de alugar dia avulso, nao e antes de hoje
         if (inputDate < currentDate) {
             alert("A data solicitada é menor do que a atual. Certifique-se de escolher uma data válida")
             return;

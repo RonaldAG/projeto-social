@@ -6,14 +6,18 @@ ul,
 iframe {
     margin: 10px;
     padding: 10px;
+    
+}
+h1{
+    text-align: center;
 }
 
-body {
+body.body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: rgb(204, 204, 204);
     line-height: 1.6;
-    background-image: url('img/background_ball.jpg');
+    background-image: url('../imagens/fundo/background_ball.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +25,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #4A90E2, rgb(2, 124, 33));
+    background:linear-gradient(to right, #4ab2e2, red);
     color: white;
     padding: 20px;
     text-align: center;
@@ -105,7 +109,7 @@ fieldset {
 
 input:focus,
 textarea:focus {
-    border-color: #9013FE;
+    border-color: red;
 }
 
 button.evento-mouse {
@@ -119,7 +123,7 @@ button.evento-mouse {
 }
 
 button.evento-mouse:hover {
-    background-color: #9013FE;
+    background-color: red;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transform: translateY(-3px);
 }
@@ -164,4 +168,7 @@ p.thick {
 p a {
     text-decoration: none;
     color: #4A90E2;
+}
+img{
+    padding: 20px;
 }
